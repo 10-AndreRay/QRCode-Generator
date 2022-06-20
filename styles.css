@@ -35,9 +35,6 @@ input[type="button"] {
     height: 35px;
     color: #fff;
 }
-input[type="button"]:hover {
-    background-color: #72b9d0;
-}
 img {
     margin-top: 30px;
 }

@@ -12,7 +12,7 @@ btnGenerateQRCode.addEventListener("click", generateQRCode);
 async function generateQRCode() {
 
     const color = getColor();
-    
+
     const content = getContent();
 
     const urlQrCode = await getQrCode(content, color);
@@ -40,8 +40,10 @@ async function getQrCode(content, color) {
     const url = urlBase + `${content}&color=${color}`;
 
     const response = await fetch(url);
+
+    const urlImgQrCode = response.url
     
-    return response.url;
+    return urlImgQrCode;
 
 };
 
